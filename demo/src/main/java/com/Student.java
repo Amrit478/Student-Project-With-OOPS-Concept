@@ -1,10 +1,8 @@
-package com.example;
-
-import java.util.*;
+package com;
 
 public class Student extends Person {
-    public Student(String name, int age, String address, String contact, String email) {
-        super(name, age, address, contact, email);
+    public Student(String name, int age, int id, String address, String contact, String email) {
+        super(name, age, id, address, contact, email);
     }
     public String getName() {
         return name;
@@ -17,6 +15,12 @@ public class Student extends Person {
     }
     public void setAge(int age) {
         this.age = age;
+    }
+    public int getid() {
+        return id;
+    }
+    public void setId(int id) {
+        this.id = id;
     }
     public String getAddress() {
         return address;
@@ -45,25 +49,4 @@ public class Student extends Person {
                 ", email='" + email + '\'' +
                 '}';
     }
-    @Override
-    public void search() {
-        // implement search logic here
-    }
-    @Override
-    public void sort() {
-        // implement sort logic here
-    }
-    @Override
-    public void add() {
-        // implement add logic here
-    }
-    @Override
-    public void update() {
-        // implement update logic here
-    }
-    @Override
-    public void delete() {
-        // implement delete logic here
-    }
-    // Add more methods here
 }
